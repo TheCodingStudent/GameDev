@@ -2,7 +2,7 @@ from pygame.math import Vector2
 
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
-TILE_SIZE = 32
+TILE_SIZE = 64
 
 OVERLAY_POSITIONS = {
     'tool': (40, SCREEN_HEIGHT - 15),

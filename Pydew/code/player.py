@@ -14,10 +14,11 @@ class Player(pygame.sprite.Sprite):
 
         self.image = self.animations[self.status][self.frame_index]
         self.rect = self.image.get_rect(center=pos)
+        self.z = LAYERS['main']
 
         self.direction = pygame.math.Vector2()
         self.pos = pygame.math.Vector2(pos)
-        self.speed = 200
+        self.speed = 400
 
         self.tools = ['hoe', 'axe', 'water']
         self.tool_index = 0
