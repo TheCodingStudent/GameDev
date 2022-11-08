@@ -80,10 +80,6 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_DOWN]:
             self.y_change += PLAYER_SPEED * self.game.deltatime
             self.facing = 'down'
-        
-        for sprite in self.game.all_sprites:
-            sprite.rect.x -= self.x_change
-            sprite.rect.y -= self.y_change
     
     def collide_blocks(self, direction):
         hits = pygame.sprite.spritecollide(self, self.game.blocks, False)
@@ -106,8 +102,7 @@ class Player(pygame.sprite.Sprite):
         if hits:
             self.kill()
             self.game.playing = False
-        
-    # def kill():
+
 
 class Block(pygame.sprite.Sprite):
     def __init__(self, game, x, y):
