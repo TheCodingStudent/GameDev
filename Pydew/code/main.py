@@ -8,7 +8,6 @@ class Game:
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         self.clock = pygame.time.Clock()
         self.fps = 60
-        # pygame.display.set_caption('Pydew Valley')
 
         self.level = Level()
     
