@@ -7,7 +7,7 @@ class Overlay:
         self.display_surface = pygame.display.get_surface()
         self.player = player
 
-        overlay_path = 'graphics/overlay/'
+        overlay_path = '../graphics/overlay/'
         self.tools_surface = {
             tool:pygame.image.load(f'{overlay_path}/{tool}.png').convert_alpha()
             for tool in player.tools

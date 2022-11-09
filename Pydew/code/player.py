@@ -68,7 +68,7 @@ class Player(pygame.sprite.Sprite):
         }
 
         for animation in self.animations.keys():
-            full_path = f'graphics/character/{animation}'
+            full_path = f'../graphics/character/{animation}'
             self.animations[animation] = import_folder(full_path)
     
     def update_timers(self):

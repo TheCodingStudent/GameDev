@@ -62,10 +62,10 @@ class Tree(Generic):
 
         self.healt = 5
         self.alive = True
-        self.stump_surf = pygame.image.load(f'graphics/stumps/{name.lower()}.png').convert_alpha()
+        self.stump_surf = pygame.image.load(f'../graphics/stumps/{name.lower()}.png').convert_alpha()
         self.invul_timer = Timer(200)
 
-        self.appler_surf = pygame.image.load('graphics/fruit/apple.png').convert_alpha()
+        self.appler_surf = pygame.image.load('../graphics/fruit/apple.png').convert_alpha()
         self.apple_pos = APPLE_POS[name]
         self.apple_sprites = pygame.sprite.Group()
         self.create_fruit()
